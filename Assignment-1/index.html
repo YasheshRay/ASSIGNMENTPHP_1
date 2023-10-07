@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Order Page">
+  <title>Order</title>
+  <meta name="robots" content="noindex, nofollow">
+  <!-- Link to an external CSS file for styling the page -->
+  <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+</head>
+<body>
+  <!-- The header section at the top of the page -->
+  <header>
+    <img  src="./image/pizza3.jpg" alt="Image">
+    <h5>Red Swan Pizza</h5>
+  </header>
+  <form action="connection.php" method="post">
+  <!-- Section for building the pizza -->
+  <section class="pizza">
+    <div class="container">
+      <h2 class="h2">Choose your Toppings</h2>
+      <div class="pizza_options">
+        <!-- Options for selecting pizza size -->
+        <div class="option">
+          <label for="size">Size:</label>
+          <select id="size" name="size">
+            <option value="personal">6"Personal</option>
+            <option value="small">8"Small</option>
+            <option value="medium">12"Medium</option>
+            <option value="large">14"Large</option>
+            <option value="extra">16"Extra Large </option>
+          </select>
+        </div>
+        <!-- Options for selecting pizza crust -->
+        <div class="option">
+          <label for="crust">Crust:</label>
+          <select id="crust" name="crust">
+            <option value="Thin">Thin</option>
+            <option value="Traditional">Traditional</option>
+            <option value="Gulten">Gulten Free </option>
+            <option value="Cauliflower">Cauliflower</option>
+            <option value="Keto">Keto</option>
+          </select>
+        </div>
+        <!-- Options for selecting pizza sauces -->
+        <div class="option">
+          <label>Sauces:</label>
+          <input type="radio" id="sauce-1" name="sauce" value="Signature Sauce"> Signature Sauce
+          <input type="radio" id="sauce-2" name="sauce" value="Ranch"> Ranch
+          <input type="radio" id="sauce-3" name="sauce" value="Sweet Chilli"> Sweet Chilli
+          <input type="radio" id="sauce-4" name="sauce" value="Buffalo Sauce"> Buffalo Sauce
+          <input type="radio" id="sauce-5" name="sauce" value="BBQ and Tomato mix"> BBQ and Tomato mix
+          <input type="radio" id="sauce-6" name="sauce" value="Teriyaki"> Teriyaki
+        </div>
+        
+        <!-- Options for selecting meat toppings -->
+        <div class="option">
+          <label>Add Meat Toppings:</label>
+          <input type="checkbox" id="toppings-1" name="Meat_Toppings[]" value="Bacon Crumble"> Bacon Crumble
+          <input type="checkbox" id="toppings-2" name="Meat_Toppings[]"  value="Chicken"> Chicken
+          <input type="checkbox" id="toppings-3" name="Meat_Toppings[]"  value="Spicy Chicken">Spicy Chicken
+          <input type="checkbox" id="toppings-4" name="Meat_Toppings[]"  value="Pesto Chicken">Pesto Chicken
+          <input type="checkbox" id="toppings-5" name="Meat_Toppings[]"   value="Ranch Chicken">Ranch Chicken
+          <input type="checkbox" id="toppings-6" name="Meat_Toppings[]"  value="Alfredo Chicken">Alfredo Chicken
+          <input type="checkbox" id="toppings-7" name="Meat_Toppings[]"  value="Cajun Chicken">Cajun Chicken
+          <input type="checkbox" id="toppings-8" name="Meat_Toppings[]"  value="Hot Chicken">Hot Chicken
+          <input type="checkbox" id="toppings-9" name="Meat_Toppings[]"  value="Butter Chicken">Butter Chicken
+          <input type="checkbox" id="toppings-10" name="Meat_Toppings[]"  value="Teriyaki Chicken">Teriyaki Chicken
+          <input type="checkbox" id="toppings-11" name="Meat_Toppings[]"  value="Tandoori Chicken">Tandoori Chicken
+          <input type="checkbox" id="toppings-12" name="Meat_Toppings[]"  value="BBQ Chicken">BBQ Chicken
+          <input type="checkbox" id="toppings-13" name="Meat_Toppings[]"  value="Beef"> Beef
+          <input type="checkbox" id="toppings-14" name="Meat_Toppings[]"  value="Lean Beef"> Lean Beef
+          <input type="checkbox" id="toppings-15" name="Meat_Toppings[]"  value="Ham"> Ham
+          <input type="checkbox" id="toppings-16" name="Meat_Toppings[]"  value="Pepperoni">Pepperoni
+          <input type="checkbox" id="toppings-17"  name="Meat_Toppings[]" value="Salami"> Salami
+          <input type="checkbox" id="toppings-18" name="Meat_Toppings[]"  value="BBQ Shrimp">BBQ Shrimp
+          <input type="checkbox" id="toppings-19" name="Meat_Toppings[]"  value="Lemon Shrimp">Lemon Shrimp
+          <input type="checkbox" id="toppings-20" name="Meat_Toppings[]"  value="Honey Garlic Chicken">Honey Garlic Chicken
+          <input type="checkbox" id="toppings-21"  name="Meat Toppings"  value="Chorizo Sausage">Chorizo Sausage
+        </div>
+        <!-- Options for selecting vegetarian toppings -->
+        <div class="option">
+          <label>Toppings Vegetarian:</label>
+          <input type="checkbox" id="toppings-22" name="Toppings_Vegetarian[]" value="Mushrooms">Mushroom
+          <input type="checkbox" id="toppings-23" name="Toppings_Vegetarian[]" value="Fresh Green Pepper"> Fresh Green Pepper
+          <input type="checkbox" id="toppings-24" name="Toppings_Vegetarian[]" value="Fresh Tomato">Fresh Tomato
+          <input type="checkbox" id="toppings-25" name="Toppings_Vegetarian[]" value="Pineapple">Pineapple
+          <input type="checkbox" id="toppings-26" name="Toppings_Vegetarian[]" value="Fresh Spinach">Fresh Spinach
+          <input type="checkbox" id="toppings-27" name="Toppings_Vegetarian[]" value="Red onion"> Red Onion
+          <input type="checkbox" id="toppings-28" name="Toppings_Vegetarian[]" value="Potato Wedges">Potato Wedges
+          <input type="checkbox" id="toppings-29" name="Toppings_Vegetarian[]" value="Fresh Red Pepper">Fresh Red Pepper
+          <input type="checkbox" id="toppings-30" name="Toppings_Vegetarian[]" value="Black Olive">Black Olive
+          <input type="checkbox" id="toppings-31" name="Toppings_Vegetarian[]" value="Banana Pepper">Banana Pepper
+          <input type="checkbox" id="toppings-32"  name="Toppings_Vegetarian[]" value="Jalapeno Pepper">Jalapeno Pepper
+        </div>
+        <!-- Options for selecting cheese toppings -->
+        <div class="option">
+          <label>Add Cheese Toppings:</label>
+          <input type="checkbox" id="toppings-33" name="Cheese_Toppings[]" value="Parmesan cheese"> Parmesan cheese
+          <input type="checkbox" id="toppings-34" name="Cheese_Toppings[]" value="Mozzarella"> Mozarella
+          <input type="checkbox" id="toppings-35" name="Cheese_Toppings[]" value="Cheddar"> Cheddar
+          <input type="checkbox" id="toppings-36"  name="Cheese_Toppings[]" value="Feta"> Feta
+          <input type="checkbox" id="toppings-37"  name="Cheese_Toppings[]" value="Parmesan Cheese">Parmesan Cheese
+          <input type="checkbox" id="toppings-38"  name="Cheese_Toppings[]" value="ButterPanner">Butter Paneer
+          <input type="checkbox" id="toppings-40" name="Cheese_Toppings[]" value="Spicy Paneer">Spicy Paneer
+          <input type="checkbox" id="toppings-41" name="Cheese_Toppings[]"  value="Vegan Cheese">Vegan Cheese
+        </div>
+        <!-- Options for selecting free toppings -->
+        <div class="option">
+          <label>Extra Charge Toppings:</label>
+          <input type="checkbox" id="toppings-42" name="Extra_Charge_Toppings[]" value="Fresh Cilantro">Fresh Cilantro
+          <input type="checkbox" id="toppings-43"  name="Extra_Charge_Toppings[]"  value="Garlic">Garlic
+          <input type="checkbox" id="toppings-44" name="Extra_Charge_Toppings[]"  value="Ginger">Ginger
+          <input type="checkbox" id="toppings-45" name="Extra_Charge_Toppings[]"  value="Chilli Flakes">Chilli Flakes
+          <input type="checkbox" id="toppings-46" name="Extra_Charge_Toppings[]"  value="Green Olive">Green Olive
+        </div>
+        <!-- Button to place the order -->
+        <button name="submit" type="submit">Place Order</button>
+      </div>
+    </div>
+    </section>
+  </form>
+</body>
+</html>
